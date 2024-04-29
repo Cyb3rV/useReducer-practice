@@ -3,15 +3,15 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 
 import { Container } from "react-bootstrap";
-import { Jumbotron } from "@/components/Jumbotron";
-import Link from "next/link";
+import Counter from "@/components/Counter";
+import CounterWReducer from "@/components/CounterWReducer";
 
 
 export default function Home() {
   return (
     <Container>
-      <Jumbotron/>
-      <Link href="/about">About</Link>
+      <Counter/>
+      <CounterWReducer/>
     </Container>
   );
 }
